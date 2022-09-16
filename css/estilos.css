@@ -112,6 +112,76 @@ p{
 .fotoPrincipal__index{
     grid-area: fotoPrincipal;
     background-color: #75c7ff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fotoPrincipal__index img{
+    width: 95%;
+    height: 55%;
+    
+
+    transition: height 3s, width 3s;
+}
+
+.fotoPrincipal__index img:hover{
+    height: 60%;
+    width: 100%;
+}
+
+.fotoPrincipal__index figure{
+    position: relative;
+    width: 95%;
+    height: 55%;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fotoPrincipal__index figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out; /**/
+}
+
+.fotoPrincipal__index figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out; 
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.fotoPrincipal__index figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.fotoPrincipal__index figure:hover > .capa h3{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.fotoPrincipal__index figure .capa h3{
+    color: #fff;
+    font-weight: 350;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 500ms ease-out; 
+    margin-top: 30px;
+}
+
+.fotoPrincipal__index figure .capa p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
 }
 
 .lorem__index{
@@ -142,10 +212,10 @@ p{
     margin: 5%;
 }
 
-.imgPrincipal__index{
+/*.imgPrincipal__index{
     width: 95%;
     height: 55%;
-}
+}*/
 .iconosRedesSociales{
     width: 20px;
     height: 20px;
