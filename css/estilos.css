@@ -9,6 +9,11 @@ html{
     flex-direction: row;
 */
 
+.imgLogo{
+    width: 80px;
+    height: 80px;
+}
+
 /*------Menu------*/
 .navegacion{
 	width: 70%;
@@ -111,7 +116,6 @@ p{
 
 .fotoPrincipal__index{
     grid-area: fotoPrincipal;
-    background-color: #75c7ff;
     display: flex;
     justify-content: center;
     align-content: center;
