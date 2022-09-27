@@ -1,0 +1,160 @@
+html {
+  font-size: 62.5%;
+  /*hace que las letras sean de 10px y permite el trabajo responsive*/ }
+
+.imgLogo {
+  width: 80px;
+  height: 80px; }
+
+body {
+  background-color: #c1e1a7; }
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/*--BORRAR al pasar todo a boostrap--*/
+/*------Menu------*/
+.navegacion {
+  width: 70%;
+  margin: 30px auto; }
+  .navegacion ul {
+    list-style: none; }
+
+.menu > li {
+  position: relative;
+  display: inline-block; }
+  .menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: 'Open sans';
+    text-decoration: none; }
+    .menu > li > a:hover {
+      color: #CE7D35;
+      transition: all .3s; }
+  .menu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1; }
+
+/* Submenu*/
+.submenu {
+  position: absolute;
+  background: #333333;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s; }
+  .submenu a {
+    display: none;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none; }
+
+/*-------------------------*/
+/*-----------CSS INDEX-----------*/
+.gridContainer__index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr 1fr;
+  grid-template-areas: 'menu menu' 'nombre fotoPrincipal' 'parrafo fotoPrincipal' 'lorem lorem' 'redesSociales redesSociales' 'footer footer'; }
+
+/* DIV para pruebas de espacio de GRID -Solo para enmaquetar-*/
+/*
+.gridContainer__index div{
+    background-color: red;
+    border: 1px solid black;
+}
+*/
+.tituloMenu {
+  grid-area: menu;
+  background-color: #525558; }
+
+.nombre {
+  grid-area: nombre;
+  background-color: #75c7ff; }
+
+.parrafo {
+  grid-area: parrafo;
+  background-color: #75c7ff; }
+
+.fotoPrincipal__index {
+  grid-area: fotoPrincipal;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .fotoPrincipal__index img {
+    width: 95%;
+    height: 55%;
+    transition: height 3s, width 3s; }
+    .fotoPrincipal__index img:hover {
+      height: 60%;
+      width: 100%; }
+  .fotoPrincipal__index figure {
+    position: relative;
+    width: 95%;
+    height: 55%;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer; }
+    .fotoPrincipal__index figure img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    .fotoPrincipal__index figure .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 103, 123, 0.6);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .fotoPrincipal__index figure .capa h3 {
+        color: #fff;
+        font-weight: 350;
+        font-size: 20px;
+        margin-bottom: 20px;
+        transition: all 500ms ease-out;
+        margin-top: 30px; }
+      .fotoPrincipal__index figure .capa p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 80%;
+        margin: auto; }
+    .fotoPrincipal__index figure:hover .capa {
+      opacity: 1;
+      visibility: visible; }
+      .fotoPrincipal__index figure:hover .capa h3 {
+        margin-top: 5%;
+        margin-bottom: 10%; }
+
+.lorem__index {
+  grid-area: lorem;
+  background-color: #75c7ff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .lorem__index p {
+    margin: 5%; }
+
+.redSociales {
+  grid-area: redesSociales;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #759eff; }
+
+.footer__index {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  background-color: #525558; }
+
+.iconosRedesSociales {
+  width: 20px;
+  height: 20px; }

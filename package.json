@@ -1,0 +1,25 @@
+{
+  "name": "tegnologiasdesarrollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --inlcude-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alan-Uzal/Tecnolog-as-de-desarrollo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alan-Uzal/Tecnolog-as-de-desarrollo/issues"
+  },
+  "homepage": "https://github.com/Alan-Uzal/Tecnolog-as-de-desarrollo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
