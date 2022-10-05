@@ -1,6 +1,8 @@
+$porcentajeStandarHtml: 62.5%;
+
 
 html{
-    font-size: 62.5%;/*hace que las letras sean de 10px y permite el trabajo responsive*/
+    font-size: porcentajeStandarHtml;/*hace que las letras sean de 10px y permite el trabajo responsive*/
 }
 
 .imgLogo{
@@ -10,11 +12,15 @@ html{
 
 body{
     background-color: #c1e1a7;
+
+    
 }
 
 p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 
 /*--BORRAR al pasar todo a boostrap--*/
 /*------Menu------*/
@@ -26,6 +32,12 @@ p{
         list-style: none;
     }
 
+}
+
+/*MIXINS*/
+@mixin sizes($ancho, $alto){
+    width: $ancho;
+    height: $alto;
 }
 
 .menu{
@@ -118,34 +130,30 @@ p{
     justify-content: center;
     align-content: center;
     img{
-        width: 95%;
-        height: 55%;
+        @include sizes(95%, 55%);
         transition: height 3s, width 3s;
         &:hover{
-            height: 60%;
-            width: 100%;
+            @include sizes(100%, 60%);
+            
         }
     }
 
     figure{
         position: relative;
-        width: 95%;
-        height: 55%;
+        @include sizes(95%, 55%);
         overflow: hidden;
         border-radius: 6px;
         cursor: pointer;
 
         img{
-            width: 100%;
-            height: 100%;
+            @include sizes(100%, 100%);
             transition: all 500ms ease-out;
         }
 
         .capa{
             position: absolute;
             top: 0;
-            width: 100%;
-            height: 100%;
+            @include sizes(100%, 100%);
             background: rgba(11, 103, 123, 0.6);
             transition: all 500ms ease-out; 
             opacity: 0;
@@ -166,8 +174,8 @@ p{
                 font-size: 14px;
                 line-height: 1.5;
                 width: 100%;
-                 max-width: 80%;
-                 margin: auto;
+                max-width: 80%;
+                margin: auto;
             }
         }
 
@@ -218,3 +226,21 @@ p{
     width: 20px;
     height: 20px;
 }
+/*Mapas - Varaibles con coleccion de variables*/
+/*Declarar el mapa - Index*/
+
+$redes:(
+    twitter: blue,
+    facebook: lightblue,
+    whatsapp: green
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+/*
+@each_key value in map{}
+*/
