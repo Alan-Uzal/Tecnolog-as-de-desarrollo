@@ -1,0 +1,14 @@
+Descripción: 
+mediante la etiqueta meta name description, agregue el siguiente 
+formato que explica en pocas palabras el contenido de mi sitio: 
+“Codeando_ es un espacio para aprender a programar 
+de manera flexible, progresiva y a tu ritmo.”
+
+Palabras clave: 
+mediante la etiqueta meta name keywords, agregue las palabras 
+clave que acompañarán a todas las páginas de mi sitio: 
+“Programacion, Lenguajes de programación, clases, 
+Aprender programación, Codeando”
+
+Encabezado: 
+para el encabezado del h1 utilice el texto “Codeando_”
