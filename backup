@@ -13,3 +13,38 @@
             </ul>
         </footer>
     </div>
+
+
+    <section>
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre"> <!--name y for tienen el mismo nombre para relacionarlo y saber que ese input hace lo puedo buscar con ese 'for'-->
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="email" name="apellido">
+            <br>
+            <label for="correo">Mail:</label>
+            <input type="password" name="correo">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea cols="20" rows="10" name="mensaje"></textarea>
+            <br>
+            <fieldset>
+                <legend>Pais de origen</legend>
+                <!--Menu desplegable-->
+                <label for="pais">Pais</label>
+                <select name="">
+                    <option value="ARG">Argentina</option>
+                    <option value="URU">Uruguay</option>
+                    <option value="PER">Perú</option>
+                    <option value="CHI">Chile</option>
+                    <option value="BOL">Bolivia</option>
+                    <option value="ECU">Ecuador</option>
+                    <option value="VEN">Venezuela</option>
+                    <option value="COL">Colombia</option>
+                </select>  
+    
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>

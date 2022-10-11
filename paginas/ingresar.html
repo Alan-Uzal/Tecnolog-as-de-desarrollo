@@ -5,86 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
-<body>
-    <div class="gridContainer__ingresar">
-        <div class="tituloMenuIng">
-           <header class="header">
-                <h1>Codeando_</h1>
-                <nav class="navegacion">
-                    <ul class="menu">
-                        <li><a href="index.html">Codeando</a></li>
-                        <li><a href="paginas/nosotros.html">Nosotros</a></li>
-                        <li><a href="paginas/aprender.html">Aprender</a></li>
-                            <ul class="subMenu">
-                                <li><a href="">Python</a></li>
-                                <li><a href="">Java</a></li>
-                                <li><a href="">C#</a></li>
-                                <li><a href="">C++</a></li>
-                                <li><a href="">C</a></li>
-                                <li><a href="">JavaScript</a></li>
-                                <li><a href="">HTML</a></li>
-                                <li><a href="">CSS</a></li>
-                                <li><a href="">Ajax</a></li>
-                                <li><a href="">Arduino</a></li>
-                                <li><a href="">React</a></li>
-                                <li><a href="">SQL</a></li>
-                            </ul>
-                        <li><a href="paginas/notis.html">Notis</a></li>
-                        <li><a href="paginas/contacto.html">Contacto</a></li>
-                        <li><a href="paginas/ingresar.html">Ingresar</a></li>
-                    </ul>
-                </nav>
-            </header> 
-        </div>
-        
-        <div class="ingreso">
-            <section>
-                <table cellpadding="12px" cellspacing="70px">
-                    <th>Ingresar</th>
-                    <th>Registrarse</th>
-                    <tr>
-                        <td>
-                            <label for="correo">Mail:</label>
-                            <input type="password" name="correo">
-                            <br>
-                            <label for="contrasenia">Ingrese Contraseña</label>
-                            <input type="password" name="contrasenia">
-                            <input type="button" value="Ingresar">
-                            <a href="">Olvidé la contraseña</a>
-                    <br>
-                        </td>
-                        <td>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre"> <!--name y for tienen el mismo nombre para relacionarlo y saber que ese input hace lo puedo buscar con ese 'for'-->
-                            <br>
-                            <label for="apellido">Apellido:</label>
-                            <input type="email" name="apellido">
-                            <br>
-                            <label for="correo">Mail:</label>
-                            <input type="password" name="correo">
-                            <br>
-                            <label for="contrasenia">Ingrese Contraseña</label>
-                            <input type="password" name="contrasenia">
-                            <br>
-                            <label for="contraseniaN">Reingrese Contraseña</label>
-                            <input type="password" name="contraseniaN">
-                            <input type="button" value="Registrarse">
-                    </tr>
-                </table>
-            </section>
-        </div>
-        <div class="redSocial__ingresar">
-            <img class="iconosRedesSociales" src="../imagenes/twitter.png" width="50" height="50">
-            <img class="iconosRedesSociales" src="../imagenes/insta.png" width="50" height="50">
-        </div>
-        <div class="footer__ingresar">
-            <p style="display: inline;">copyright</p>
-        </div>
-        
-    </div>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Keywords-->
+    <meta name="keywords" content="Programacion, Lenguajes de programación, clases, Aprender programación, Codeando">
     
+    <!--Meta description-->
+    <meta name="description" content="Codeando_ es un espacio para aprender a aprogramar de manera flexible, progresiva y a tu ritmo.">
+</head>
+<body class="fondo">
+    <header class="container-fluid row navbar navbar-expand-lg ">
+        <div class=" col-4 logo">
+            <img class="imgLogo" src="../imagenes/logo.png" alt="">
+            <div class=" tituloLogo">
+                <h1>Codeando_</h1>
+            </div>
+        </div>
+        <div class="col-8 header__menu">
+            <div class=" centered-elements">
+                <div>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="../index.html">Inicio</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="aprender.html">Aprender</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="nosotros.html">Nosotros</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="planes.html">Planes</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="ingresar.html">Ingreso</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <main class="container-fluid form-signin w-100 m-auto d-flex justify-content-center align-items-center mt-3 m mb-5">
+        <form>
+            <h1 class="h3 mb-3 fw-normal pBlanco">Sign in</h1>
+        
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Mail</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+        
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me" > Rercordarme
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+            <button onclick="location.href='registrarse.html'" class="w-100 btn btn-lg btn-primary mt-5" type="button">Registrarme</button>
+        </form>
+    </main>
+
+    <div class="container-fluid row d-flex justify-content-around">
+        <footer class=" col-12 d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex justify-content-start align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><img class="iconosRedes" src="../imagenes/logo.png" alt=""><use href=""/></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Codeando_ , Inc</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/instagramIcono.png" alt=""><use href=""/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/twitterIcono.png" alt=""><use href=""/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/linkedinIcono.png" alt=""><use href=""/></svg></a></li>
+            </ul>
+        </footer>
+    </div>
     
 </body>
 </html>
