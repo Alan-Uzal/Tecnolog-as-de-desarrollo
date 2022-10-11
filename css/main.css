@@ -1,3 +1,12 @@
+.btn--twitter {
+  background-color: blue; }
+
+.btn--facebook {
+  background-color: lightblue; }
+
+.btn--whatsapp {
+  background-color: green; }
+
 .fondo {
   background: #1D1D1D; }
 
@@ -53,10 +62,20 @@ header {
     padding: 5px 10px;
     text-decoration: none;
     color: white; }
-    .boton a:hover {
-      color: white; }
+    .boton a:hover--primero {
+      color: #A40000; }
+    .boton a:hover--segundo {
+      color: #D15F05; }
+    .boton a:hover--tercero {
+      color: #FE8524; }
+    .boton a:hover--cuarto {
+      color: #244FFE; }
+    .boton a:hover--quinto {
+      color: #001D95; }
+    .boton a:hover--fondo {
+      color: #1D1D1D; }
   .boton:hover {
-    color: white;
+    color: #A40000;
     font-weight: bold; }
     .boton:hover span:nth-child(1) {
       left: 0; }
@@ -111,18 +130,3 @@ header {
 .imagenes__index {
   width: 400px;
   height: 270px; }
-
-/*Mapas - Varaibles con coleccion de variables*/
-/*Declarar el mapa - Index*/
-.btn--twitter {
-  background-color: blue; }
-
-.btn--facebook {
-  background-color: lightblue; }
-
-.btn--whatsapp {
-  background-color: green; }
-
-/*
-@each_key value in map{}
-*/

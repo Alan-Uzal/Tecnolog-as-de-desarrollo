@@ -1,7 +1,28 @@
 $porcentajeStandarHtml: 62.5%;
 
+$paleta:(
+    primero: #A40000,
+    segundo:#D15F05,
+    tercero: #FE8524,
+    cuarto:#244FFE,
+    quinto:#001D95,
+    fondo: #1D1D1D,
+);
+
+$redes:(
+    twitter: blue,
+    facebook: lightblue,
+    whatsapp: green
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
 .fondo{
-    background: #1D1D1D;
+    background: map-get($paleta, fondo);
 }
 
 html{
@@ -74,18 +95,24 @@ header{
     background-color: transparent;
     overflow: hidden;
 
+
     a{
         display: block;
         padding: 5px 10px;
         text-decoration: none;
         color: white;
         &:hover{
-            color: white;
+            @each $btnes, $color in $paleta{
+                &--#{$btnes}{
+                    color: $color;
+                }
+            }
+            //color: white;
         }
     }
 
     &:hover{
-        color: white;
+        color: map-get($paleta, primero);
         font-weight: bold;
         span{
             &:nth-child(1){
@@ -166,22 +193,3 @@ header{
     @include sizes(400px, 270px);
 }
 
-
-/*Mapas - Varaibles con coleccion de variables*/
-/*Declarar el mapa - Index*/
-
-$redes:(
-    twitter: blue,
-    facebook: lightblue,
-    whatsapp: green
-);
-
-@each $red, $color in $redes{
-    .btn--#{$red}{
-        background-color: $color;
-    }
-}
-
-/*
-@each_key value in map{}
-*/
