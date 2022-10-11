@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
-<body>
-    <header>
-        <nav class="menuPrincipal">
-            <h1>Codeando_</h1>
-            <ul>
-                <li><a href="../index.html">Codeando</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="aprender.html">Aprender</a></li>
-                <li><a href="notis.html">Notis</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="ingresar.html">Ingresar</a></li>
-            </ul>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Keywords-->
+        <meta name="keywords" content="Programacion, Lenguajes de programación, clases, Aprender programación, Codeando">
+      
+        <!--Meta description-->
+        <meta name="description" content="Codeando_ es un espacio para aprender a aprogramar de manera flexible, progresiva y a tu ritmo.">
+      </head>
+<body class="fondo">
+    <header class="container-fluid row navbar navbar-expand-lg ">
+        <div class=" col-4 logo">
+          <img class="imgLogo" src="../imagenes/logo.png" alt="">
+          <div class=" tituloLogo">
+              <h1>Codeando_</h1>
+          </div>
+        </div>
+        <div class="col-8 header__menu">
+            <div class=" centered-elements">
+                <div>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="../index.html">Inicio</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="aprender.html">Aprender</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="nosotros.html">Nosotros</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="contacto.html">Contacto</a>
+                    </button>
+                    <button class="boton ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <a href="ingresar.html">Ingreso</a>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <h1>Somos</h1>
-        <p> Profesionales que utilizamos el interés personal como motor de aprendizaje.</p>
-        <p> Brindando un espacio digital con una amplia oferta de capacitaciones y/o actualizaciones que utilizan un método de aprendizaje progresivo e incremental</p>
-        <h2>Buscamos</h2>
-        <p>Ser un espacio que acompañe el proceso de aprendizaje, generando una amplia comunidad que beneficie e impulse el desarrollo personal, académico y profesional de nuestros ‘coders’ </p>
+    <main class="container-fluid row d-flex justify-content-around mt-2">
+        <h1 class="pBlanco">Somos</h1>
+        <p class="pBlanco"> Profesionales que utilizamos el interés personal como motor de aprendizaje.</p>
+        <p class="pBlanco"> Brindando un espacio digital con una amplia oferta de capacitaciones y/o actualizaciones que utilizan un método de aprendizaje progresivo e incremental</p>
+        <h2 class="pBlanco">Buscamos</h2>
+        <p class="pBlanco">Ser un espacio que acompañe el proceso de aprendizaje, generando una amplia comunidad que beneficie e impulse el desarrollo personal, académico y profesional de nuestros ‘coders’ </p>
     </main>
-    <section>
-        <h2>Organizaciones con la que trabajamos</h2>
+    <section class="container-fluid row d-flex justify-content-center mt-2">
+        <h2 class="pBlanco">Organizaciones con la que trabajamos</h2>
         <table cellpadding="12px" cellspacing="15px"> 
             <th></th>
             <th></th>
@@ -50,5 +92,20 @@
             </tr>
         </table>
     </section>
+    <div class="container-fluid row d-flex justify-content-around">
+        <footer class=" col-12 d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex justify-content-start align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><img class="iconosRedes" src="../imagenes/logo.png" alt=""><use href=""/></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/instagramIcono.png" alt=""><use href=""/></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/twitterIcono.png" alt=""><use href=""/></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/linkedinIcono.png" alt=""><use href=""/></svg></a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

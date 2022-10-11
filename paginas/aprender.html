@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprender Programacion</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprender</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Keywords-->
+  <meta name="keywords" content="Programacion, Lenguajes de programación, clases, Aprender programación, Codeando">
+
+  <!--Meta description-->
+  <meta name="description" content="Codeando_ es un espacio para aprender a aprogramar de manera flexible, progresiva y a tu ritmo.">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../imagenes/logo.png" class="imgLogo" alt=""></a>
-            <h2>Codeando_</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="aprender.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Aprender
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="ingresar.html">Ingresar</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            </div>
+<body class="fondo">
+  <header class="container-fluid row navbar navbar-expand-lg ">
+    <div class=" col-4 logo">
+      <img class="imgLogo" src="../imagenes/logo.png" alt="">
+      <div class=" tituloLogo">
+          <h1>Codeando_</h1>
+      </div>
+    </div>
+    <div class="col-8 header__menu">
+      <div class=" centered-elements">
+        <div>
+          <button class="boton ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="../index.html">Inicio</a>
+          </button>
+          <button class="boton ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="aprender.html">Aprender</a>
+          </button>
+          <button class="boton ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="nosotros.html">Nosotros</a>
+          </button>
+          <button class="boton ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="contacto.html">Contacto</a>
+          </button>
+          <button class="boton ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="ingresar.html">Ingreso</a>
+          </button>
         </div>
-    </nav>
-    <main class="container-fluid row justify-content-center">
+      </div>
+    </div>
+  </header>
+    <main class="container-fluid row d-flex justify-content-center mt-2">
         <div class="col-2">
-            <h1>
+            <h1 class="pBlanco">
                 Programacion
             </h1>
         </div>
     </main>
-    <section class="container">
+    <section class="container justify-content-around">
         <div class="row justify-content-around">
             <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card1.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/progEstructurada.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Estructurada</h5>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cumque error voluptas! Unde quia aliquam nobis recusandae odio earum reiciendis vitae, quaerat repudiandae laboriosam fugit non deserunt quasi facere pariatur?</p>
+                  <p class="card-text">Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora recurriendo únicamente a subrutinas y a tres estructuras de control básicas: secuencia, selección (if y switch) e iteración (bucles for y while)</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
               <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card1.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/progOOP.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Lógica</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nulla! Placeat alias facilis adipisci soluta iusto quam modi voluptas earum ipsa, consequatur hic dolorum perferendis quibusdam odit nesciunt. Facere, illo?</p>
+                  <h5 class="card-title">Orietado a Objetos</h5>
+                  <p class="card-text">La Programación Orientada a Objetos (POO, en español; OOP, según sus siglas en inglés) es un paradigma de programación que parte del concepto de "objetos" como base, los cuales contienen información en forma de campos (a veces también referidos como atributos o propiedades) y código en forma de métodos.
+
+                    Los objetos son capaces de interactuar y modificar los valores contenidos en sus campos o atributos (estado) a través de sus métodos (comportamiento).</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
               <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card1.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/progFunc.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Funcional</h5>
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur culpa suscipit iure, adipisci modi, doloremque dicta praesentium, perspiciatis obcaecati at vitae? Voluptas, quam eaque tenetur ex autem soluta molestias!</p>
+                  <p class="card-text">es un paradigma de programación declarativa basado en el uso de verdaderas funciones matemáticas. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior.</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
@@ -90,42 +103,24 @@
     <hr>
     <section class="container">
         <div class="row justify-content-center">
-            <h1>
+            <h1 class="pBlanco">
                 Lenguajes
             </h1>
         </div>
         <div class="row m-2 justify-content-around">
             <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card2.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/card1.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Python</h5>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cumque error voluptas! Unde quia aliquam nobis recusandae odio earum reiciendis vitae, quaerat repudiandae laboriosam fugit non deserunt quasi facere pariatur?</p>
+                  <p class="card-text">Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda 3D, entre otros.</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
               <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card3.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Ajax</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nulla! Placeat alias facilis adipisci soluta iusto quam modi voluptas earum ipsa, consequatur hic dolorum perferendis quibusdam odit nesciunt. Facere, illo?</p>
-                  <a href="#" class="btn btn-primary">Codea</a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card4.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Java</h5>
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur culpa suscipit iure, adipisci modi, doloremque dicta praesentium, perspiciatis obcaecati at vitae? Voluptas, quam eaque tenetur ex autem soluta molestias!</p>
-                  <a href="#" class="btn btn-primary">Codea</a>
-                </div>
-              </div>
-        </div> 
-        <div class="row m-2 justify-content-around">
-            <div class="card col-3" style="width: 18rem;">
                 <img class="card-img-top" src="../imagenes/card2.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">C</h5>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cumque error voluptas! Unde quia aliquam nobis recusandae odio earum reiciendis vitae, quaerat repudiandae laboriosam fugit non deserunt quasi facere pariatur?</p>
+                  <h5 class="card-title">Java</h5>
+                  <p class="card-text">La plataforma Java es el nombre de un entorno o plataforma de computación originaria de Sun Microsystems, capaz de ejecutar aplicaciones desarrolladas usando el lenguaje de programación Java u otros lenguajes que compilen a bytecode y un conjunto de herramientas de desarrollo.</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
@@ -133,37 +128,52 @@
                 <img class="card-img-top" src="../imagenes/card3.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">C++</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nulla! Placeat alias facilis adipisci soluta iusto quam modi voluptas earum ipsa, consequatur hic dolorum perferendis quibusdam odit nesciunt. Facere, illo?</p>
+                  <p class="card-text">C++ es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.</p>
+                  <a href="#" class="btn btn-primary">Codea</a>
+                </div>
+              </div>
+        </div> 
+        <div class="row m-2 justify-content-around">
+            <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="../imagenes/card4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Ajax</h5>
+                  <p class="card-text">Técnica de desarrollo web para crear aplicaciones web asíncronas. Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano. De esta forma es posible interactuar con el servidor sin necesidad de recargar la página web, mejorando la interactividad, velocidad y usabilidad en las aplicaciones.</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
               <div class="card col-3" style="width: 18rem;">
-                <img class="card-img-top" src="../imagenes/card4.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/card5.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">C#</h5>
-                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur culpa suscipit iure, adipisci modi, doloremque dicta praesentium, perspiciatis obcaecati at vitae? Voluptas, quam eaque tenetur ex autem soluta molestias!</p>
+                  <h5 class="card-title">React<h5>
+                  <p class="card-text">React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores libres.</p>
+                  <a href="#" class="btn btn-primary">Codea</a>
+                </div>
+              </div>
+              <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="../imagenes/card6.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Arduino</h5>
+                  <p class="card-text">Arduino una compañía de desarrollo de software y hardware libres, así como una comunidad internacional que diseña y manufactura placas de desarrollo de hardware para construir dispositivos digitales y dispositivos interactivos que puedan detectar y controlar objetos del mundo real.</p>
                   <a href="#" class="btn btn-primary">Codea</a>
                 </div>
               </div>
         </div> 
     </section>
-    <section>
-        <div class="row lorem__index">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, distinctio deleniti veritatis iusto nulla at. Soluta possimus placeat, tenetur libero excepturi, cupiditate vel dolore ad facere, nostrum dolorem enim ducimus?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi cum in dolore ducimus ullam ad minus consequatur facere eum laboriosam, mollitia reprehenderit vero ipsam eligendi asperiores alias veniam. Facilis, laudantium?
-            </p>
-        </div>
-        <div class="redSociales">
-            <img class="iconosRedesSociales" src="../imagenes/twitter.png" width="50" height="50">
-            <img class="iconosRedesSociales" src="../imagenes/insta.png" width="50" height="50">
-        </div>
-    </section>
-    <div>
-        <hr>
-    </div>
-    <div class="footer__index">
-        <p style="display: inline;">copyright</p>
+    <div class="container-fluid row d-flex justify-content-around">
+      <footer class=" col-12 d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex justify-content-start align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><img class="iconosRedes" src="../imagenes/logo.png" alt=""><use href=""/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/instagramIcono.png" alt=""><use href=""/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/twitterIcono.png" alt=""><use href=""/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img class="iconosRedes img-fluid" src="../imagenes/linkedinIcono.png" alt=""><use href=""/></svg></a></li>
+          </ul>
+      </footer>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

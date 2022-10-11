@@ -1,19 +1,18 @@
 $porcentajeStandarHtml: 62.5%;
 
+.fondo{
+    background: #1D1D1D;
+}
 
 html{
     font-size: porcentajeStandarHtml;/*hace que las letras sean de 10px y permite el trabajo responsive*/
 }
 
-.imgLogo{
-    width: 80px;
-    height: 80px;
-}
 
-body{
-    background-color: #c1e1a7;
+.pBlanco{
+    @extend p;
+    color: #fff;
 
-    
 }
 
 p{
@@ -21,18 +20,32 @@ p{
 }
 
 
-
-/*--BORRAR al pasar todo a boostrap--*/
-/*------Menu------*/
-.navegacion{
-	width: 70%;
-	margin: 30px auto;
-
-    ul{
-        list-style: none;
-    }
-
+header{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.imgLogo{
+    width: 80px;
+    height: 80px;
+}
+
+.tituloLogo{
+    color: #fff;
+    margin-top: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
 
 /*MIXINS*/
 @mixin sizes($ancho, $alto){
@@ -40,192 +53,120 @@ p{
     height: $alto;
 }
 
-.menu{
-    > li{
-	    position: relative;
-	    display: inline-block;
 
-        > a{
-            display: block;
-	        padding: 15px 20px;
-	        color: #353535;
-	        font-family: 'Open sans';
-	        text-decoration: none;
 
-            &:hover{
-                color: #CE7D35;
-                transition: all .3s;
-            }
-        }
-        &:hover{
-            .submenu{
-                visibility: visible;
-	            opacity: 1;
-            }
-        }
-    }
+/*------Menu------*/
+
+.centered-elements {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-/* Submenu*/
+.boton {
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    background-color: transparent;
+    overflow: hidden;
 
-.submenu{
-	position: absolute;
-	background: #333333;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
     a{
-        display: none;
-        padding: 15px;
-        color: #fff;
-        font-family: 'Open sans';
+        display: block;
+        padding: 5px 10px;
         text-decoration: none;
+        color: white;
+        &:hover{
+            color: white;
+        }
     }
-}
 
+    &:hover{
+        color: white;
+        font-weight: bold;
+        span{
+            &:nth-child(1){
+                left: 0;
+            }
+            &:nth-child(2){
+                right: 0;
+            }
+            &:nth-child(3){
+                bottom: 0;
+            }
+            &:nth-child(4){
+                top: 0;
+            }
+        
+        
+        }
+        
+        
+    }
+
+    span{
+        position: absolute;
+        background: #fff;
+        transition: .5s;
+
+        &:nth-child(1){
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: -100%;
+        }
+
+        &:nth-child(2){
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            right: -100%;
+        }
+
+        &:nth-child(3){
+            width: 1px;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+        }
+
+        &:nth-child(4){
+            width: 1px;
+            height: 100%;
+            top: -100%;
+            right: 0;
+        }
+    }
+
+}
 /*-------------------------*/
 
-/*-----------CSS INDEX-----------*/
-.gridContainer__index{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr 1fr;
-    grid-template-areas: 
-        'menu menu'
-        'nombre fotoPrincipal'
-        'parrafo fotoPrincipal'
-        'lorem lorem'
-        'redesSociales redesSociales'
-        'footer footer'
-    ;
-}
-
-/* DIV para pruebas de espacio de GRID -Solo para enmaquetar-*/
-/*
-.gridContainer__index div{
-    background-color: red;
-    border: 1px solid black;
-}
-*/
-
-.tituloMenu{
-    grid-area: menu;
-    background-color: #525558;
-}
-
-.nombre {
-    grid-area: nombre;
-    background-color: #75c7ff;
-}
-
-.parrafo{
-    grid-area: parrafo;
-    background-color: #75c7ff;
-}
-
-.fotoPrincipal__index{
-    grid-area: fotoPrincipal;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    img{
-        @include sizes(95%, 55%);
-        transition: height 3s, width 3s;
-        &:hover{
-            @include sizes(100%, 60%);
-            
-        }
-    }
-
-    figure{
-        position: relative;
-        @include sizes(95%, 55%);
-        overflow: hidden;
-        border-radius: 6px;
-        cursor: pointer;
-
-        img{
-            @include sizes(100%, 100%);
-            transition: all 500ms ease-out;
-        }
-
-        .capa{
-            position: absolute;
-            top: 0;
-            @include sizes(100%, 100%);
-            background: rgba(11, 103, 123, 0.6);
-            transition: all 500ms ease-out; 
-            opacity: 0;
-            visibility: hidden;
-            text-align: center;
-            
-            h3{
-                color: #fff;
-                font-weight: 350;
-                font-size: 20px;
-                margin-bottom: 20px;
-                transition: all 500ms ease-out; 
-                margin-top: 30px;
-            }
-
-            p{
-                color: #fff;
-                font-size: 14px;
-                line-height: 1.5;
-                width: 100%;
-                max-width: 80%;
-                margin: auto;
-            }
-        }
-
-        &:hover{
-            .capa{
-                opacity: 1;
-                visibility: visible;
-
-                h3{
-                    margin-top: 5%;
-                    margin-bottom: 10%;
-                }
-            }
-        }
-    }
-}
-
-
-.lorem__index{
-    grid-area: lorem;
-    background-color: #75c7ff;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p{
-        margin: 5%;
-    }
-}
-
-.redSociales{
-    grid-area: redesSociales;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #759eff;
-}
-
-.footer__index{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    background-color: #525558;
-}
-
-.iconosRedesSociales{
+/*-Footer-*/
+.iconosRedes{
     width: 20px;
     height: 20px;
 }
+
+/*---Index---*/
+.header__menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0%;
+}
+
+.fotoPrincipal__index{
+    @include sizes(500px, 300px);
+    margin: auto;
+}
+
+.imagenes__index{
+    @include sizes(400px, 270px);
+}
+
+
 /*Mapas - Varaibles con coleccion de variables*/
 /*Declarar el mapa - Index*/
 
